@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Vùng bao bọc toàn bộ trang và căn giữa */
+#main {
+    width: 960px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Vùng Logo / Banner */
+#head {
+    height: 120px;
+    background-color: #34495e;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+/* Vùng thanh menu liên kết */
+#head-link {
+    background-color: #2980b9;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+}
+
+#head-link a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+#head-link a:hover {
+    text-decoration: underline;
+}
+
+/* Container bọc 3 cột có Clearfix */
+#body-content::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Cột bên trái */
+#left {
+    width: 200px;
+    min-height: 400px;
+    float: left;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border: 1px solid #bdc3c7;
+}
+
+#left ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+#left ul li {
+    margin-bottom: 8px;
+}
+
+#left ul li a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+#left ul li a:hover {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+/* Cột nội dung chính ở giữa */
+#content {
+    width: 530px;
+    min-height: 400px;
+    float: left;
+    margin-left: 10px;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Cột bên phải */
+#right {
+    width: 200px;
+    min-height: 400px;
+    float: right;
+    background-color: #ecf0f1;
+    padding: 15px;
+    border: 1px solid #bdc3c7;
+}
+
+/* Vùng Footer cuối trang */
+#footer {
+    clear: both;
+    background-color: #2c3e50;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 10px;
+}
